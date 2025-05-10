@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + Expo + Firebase Notifications
 
-## Getting Started
+This project demonstrates a simple web application built with **Next.js** and **Material UI** that includes:
 
-First, run the development server:
+* **Google Sign-Up Authentication**
+* **Firebase Cloud Messaging (FCM)** integration for push notifications
+* **Expo Android App** using **WebView** to display the web app
+
+---
+
+## 🔧 Technologies Used
+
+* **Next.js 14**
+* **Material UI (MUI)**
+* **Firebase (v9)**
+* **Expo SDK (React Native)**
+
+---
+
+## 🌐 Web App Features
+
+* Built with Next.js using app directory
+* Google Sign-Up using Firebase Authentication
+* Clean, responsive UI with MUI components
+* Firebase push notifications via FCM
+
+---
+
+## 📱 Mobile App (Expo)
+
+* Android app created using Expo
+* Integrates the web version using `react-native-webview`
+* Supports push notifications using `expo-notifications` + FCM
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Maaiethiru/nextjs-expo-firebase.git
+cd nextjs-expo-firebase
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Web App Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd nextjs-app
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then visit: `http://localhost:3000`
 
-## Learn More
+### 3. Expo App Setup
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd expo-app
+npm install
+npx expo start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use Expo Go or Android emulator to view the app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔔 Firebase Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Set up Firebase project with Authentication & FCM enabled
+* Add your Firebase config in `firebase-config.js`
+* Upload the FCM key to the Expo app for notifications
+
+---
+
+## 📂 Project Structure
+
+```
+nextjs-expo-firebase/
+├── nextjs-app/     # Web app source
+├── expo-app/       # Android app source
+```
+
+---
+
+## 📜 License
+
+This project is created for educational and internship purposes.
